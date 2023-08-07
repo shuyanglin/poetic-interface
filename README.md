@@ -10,7 +10,7 @@ This is an example Poetic Interface built on OpenAI API [quickstart tutorial](ht
 3. Navigate into the project directory
 
    ```bash
-   $ cd openai-quickstart-node
+   $ cd poetic-interface
    ```
 
 4. Install the requirements
