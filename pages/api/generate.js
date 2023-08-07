@@ -32,6 +32,7 @@ export default async function (req, res) {
       model: "text-davinci-003",
       prompt: generatePrompt(phrase),
       temperature: 0.6,
+      max_tokens: 30,
     });
     res.status(200).json({ result: completion.data.choices[0].text });
   } catch(error) {
@@ -51,5 +52,14 @@ export default async function (req, res) {
 }
 
 function generatePrompt(phrase) {
-  return `Suggest a short poetic scentence about River Don using the key phrase. Generate maximum one scentence more than 6 words, less than 10 words.`;
+  return `Suggest a Poem about river Don using the Keywords. 
+  Keyword: Woods
+  Poem: River Don, a winding tale. Through fields and woods, it sails. Whispering secrets to the breeze, Nature's melody, at ease...
+  Keyword: Stream
+  Poem: River Don, a shimmering stream. In daylight's gentle gleam. Flowing through the land so free. A liquid ribbon, eternally...
+  Keyword: Folk music ->
+  Poem: River Don's gentle flow, inspires folk music's glow. Strings and voices, harmonize, underneath its open skies...
+  Keyword: ${phrase}
+  Poem: 
+  `;
 }

@@ -51,7 +51,7 @@ export default function Home() {
           />
           <input type="submit" value="Generate a poem" />
         </form>
-        <div className={styles.result}>{result}</div>
+        <div id="demo" className={styles.result}>{result}</div>
       </main>
     </div>
   );
