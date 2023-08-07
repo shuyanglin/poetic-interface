@@ -1,5 +1,5 @@
-# River Don Poem generator
-This is an example River Don poem generator built on OpenAI API [quickstart tutorial](https://platform.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). 
+# Poetic Interface
+This is an example Poetic Interface built on OpenAI API [quickstart tutorial](https://platform.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). 
 
 ## Setup
 
